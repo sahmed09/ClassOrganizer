@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" First Name"
+        android:textColor="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Last Name"
+        android:textColor="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Email"
+        android:textColor="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/userNameSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Username"
+        android:textColor="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_username"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/createPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Create Password"
+        android:textColor="#FFFFFFFF"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Confirm Password"
+        android:textColor="#FFFFFFFF"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="#0F0FFF"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>
