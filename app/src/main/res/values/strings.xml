@@ -33,4 +33,13 @@
 
     </string-array>
 
+    <string name="aboutUs">
+
+        This app is developed by Shihab Ahmed\n
+        Department of ICT\n
+        Cumilla University\n
+        ID: 11609009\n
+
+    </string>
+
 </resources>
