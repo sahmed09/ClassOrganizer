@@ -62,6 +62,19 @@
         android:textStyle="bold"/>
 
     <EditText
+        android:id="@+id/accountType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Account Type (student/teacher)"
+        android:textColor="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_accounttype"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
         android:id="@+id/createPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
