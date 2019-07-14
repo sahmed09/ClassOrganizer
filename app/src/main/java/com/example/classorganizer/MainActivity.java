@@ -2,6 +2,7 @@ package com.example.classorganizer;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,12 +13,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText usernameEditText,passwordEditText;
-    Button loginButton,signUpButton;
+    Button loginButton,signUpHereButton;
     Intent intent;
+    DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,11 +35,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         usernameEditText = findViewById(R.id.userName);
         passwordEditText = findViewById(R.id.password);
+
         loginButton = findViewById(R.id.loginButton);
-        signUpButton = findViewById(R.id.signupButton);
+        signUpHereButton = findViewById(R.id.signUpHereButton);
 
         loginButton.setOnClickListener(this);
-        signUpButton.setOnClickListener(this);
+        signUpHereButton.setOnClickListener(this);
+
+        databaseHelper = new DatabaseHelper(this);
+        SQLiteDatabase sqLiteDatabase = databaseHelper.getWritableDatabase();
     }
 
     @Override
@@ -47,39 +54,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(v.getId() == R.id.loginButton) {
             if(username.isEmpty()) {
-                errorMessage();
+                usernameErrorMessage();
             }
             else if(password.isEmpty()) {
-                errorMessage1();
+                passwordErrorMessage();
             }
             else {
-                if(username.equals("student") && password.equals("12345")) {
+                //checking username and password
+                Boolean result = databaseHelper.findPassword(username,password);
 
-                    intent = new Intent(MainActivity.this, Student.class);
-                    startActivity(intent);
-                }
-                else if(username.equals("teacher") && password.equals("12345")) {
-
-                    intent = new Intent(MainActivity.this, Teacher.class);
-                    startActivity(intent);
+                if(result == true) {
+                    //checking account type
+                    String result2 = databaseHelper.findAccount(username);
+                    if(result2.equals("student")) {
+                        intent = new Intent(MainActivity.this,Student.class);
+                        startActivity(intent);
+                    }
+                    else if(result2.equals("teacher")) {
+                        intent = new Intent(MainActivity.this,Teacher.class);
+                        startActivity(intent);
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(),"username and password didn't match",Toast.LENGTH_LONG).show();
                 }
             }
         }
-        else {
+        else if (v.getId() == R.id.signUpHereButton){
+
             intent = new Intent(MainActivity.this,SignUpActivity.class);
             startActivity(intent);
         }
     }
 
     //username error message generator
-    void errorMessage() {
+    public void usernameErrorMessage() {
         usernameEditText.setError("Please enter the user name");
         usernameEditText.requestFocus();
         return;
     }
 
     //password error message generator
-    void errorMessage1() {
+    public void passwordErrorMessage() {
         passwordEditText.setError("Enter a valid password");
         passwordEditText.requestFocus();
         return;

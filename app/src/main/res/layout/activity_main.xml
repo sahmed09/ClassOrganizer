@@ -58,7 +58,7 @@
             android:textAllCaps="false"/>
 
         <Button
-            android:id="@+id/signupButton"
+            android:id="@+id/signUpHereButton"
             android:text="Sign Up"
             android:textColor="#FFFFFF"
             android:textSize="20sp"

@@ -10,10 +10,10 @@
     tools:context=".SignUpActivity">
 
     <EditText
-        android:id="@+id/firstName"
+        android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" First Name"
+        android:hint=" Name"
         android:textColor="#FFFFFFFF"
         android:drawableLeft="@drawable/ic_action_person"
         android:layout_marginBottom="20dp"
@@ -23,20 +23,7 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/lastName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint=" Last Name"
-        android:textColor="#FFFFFFFF"
-        android:drawableLeft="@drawable/ic_action_person"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textSize="17sp"
-        android:textStyle="bold"/>
-
-    <EditText
-        android:id="@+id/email"
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint=" Email"
@@ -75,7 +62,7 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/createPassword"
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint=" Create Password"
@@ -88,22 +75,8 @@
         android:textSize="17sp"
         android:textStyle="bold"/>
 
-    <EditText
-        android:id="@+id/confirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint=" Confirm Password"
-        android:textColor="#FFFFFFFF"
-        android:inputType="textPassword"
-        android:drawableLeft="@drawable/ic_action_password"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textSize="17sp"
-        android:textStyle="bold"/>
-
     <Button
-        android:id="@+id/signupButton"
+        android:id="@+id/signUpButton"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
