@@ -65,7 +65,7 @@
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" Create Password"
+        android:hint=" Create Password (at least 5 characters)"
         android:textColor="#FFFFFFFF"
         android:inputType="textPassword"
         android:drawableLeft="@drawable/ic_action_password"

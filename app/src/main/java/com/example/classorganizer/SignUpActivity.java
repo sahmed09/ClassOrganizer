@@ -42,27 +42,69 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String name = nameEditText.getText().toString();
         String email = emailEditText.getText().toString();
         String username = usernameEditText.getText().toString();
-        String accountType = accountTypeEditText.getText().toString();
+        String accountType = accountTypeEditText.getText().toString().toLowerCase();
         String password = passwordEditText.getText().toString();
 
-        userDetails.setName(name);
-        userDetails.setEmail(email);
-        userDetails.setUsername(username);
-        userDetails.setAccountType(accountType);
-        userDetails.setPassword(password);
-
-        long rowId = databaseHelper.insertData(userDetails);
-
-        if(rowId == -1) {
-            Toast.makeText(getApplicationContext(),"Data insertion failed",Toast.LENGTH_LONG).show();
+        Boolean accountCheck = false;
+        if(accountType.equals("student") || accountType.equals("teacher")){
+            accountCheck=true;
+        }
+        if(!accountCheck){
+            accountTypeEditText.setError("Please check your spelling");
+            accountTypeEditText.requestFocus();
+            return;
+        }
+        if(name.isEmpty()) {
+            nameEditText.setError("Please enter name");
+            nameEditText.requestFocus();
+            return;
+        }
+        else if(email.isEmpty()) {
+            emailEditText.setError("Please enter your email address");
+            emailEditText.requestFocus();
+            return;
+        }
+        else if(username.isEmpty()) {
+            usernameEditText.setError("Please enter the user name");
+            usernameEditText.requestFocus();
+            return;
+        }
+        else if(accountType.isEmpty()) {
+            accountTypeEditText.setError("Please enter account type");
+            accountTypeEditText.requestFocus();
+            return;
+        }
+        else if(password.isEmpty()) {
+            passwordEditText.setError("Please enter password");
+            passwordEditText.requestFocus();
+            return;
+        }
+        else if(password.length()<5) {
+            passwordEditText.setError("Insert at least 5 characters");
+            passwordEditText.requestFocus();
+            return;
         }
         else {
-            Toast.makeText(getApplicationContext(),"Data is successfully inserted",Toast.LENGTH_LONG).show();
-            nameEditText.setText("");
-            emailEditText.setText("");
-            usernameEditText.setText("");
-            accountTypeEditText.setText("");
-            passwordEditText.setText("");
+
+            userDetails.setName(name);
+            userDetails.setEmail(email);
+            userDetails.setUsername(username);
+            userDetails.setAccountType(accountType);
+            userDetails.setPassword(password);
+
+            long rowId = databaseHelper.insertData(userDetails);
+
+            if(rowId == -1) {
+                Toast.makeText(getApplicationContext(),"Data insertion failed",Toast.LENGTH_LONG).show();
+            }
+            else {
+                Toast.makeText(getApplicationContext(),"Data is successfully inserted",Toast.LENGTH_LONG).show();
+                nameEditText.setText("");
+                emailEditText.setText("");
+                usernameEditText.setText("");
+                accountTypeEditText.setText("");
+                passwordEditText.setText("");
+            }
         }
     }
 }
