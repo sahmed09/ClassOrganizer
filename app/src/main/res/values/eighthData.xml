@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="eightSundayCourse">
+        <item> ICT-505 </item>
+        <item> ICT-503 </item>
+    </string-array>
+    <string-array name="eightSundayTeacher">
+        <item> Md. Tofael Ahmed </item>
+        <item> Md. Ariful Islam </item>
+    </string-array>
+    <string-array name="eightSundayTime">
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="eightMondayCourse">
+        <item> ICT-501 </item>
+        <item> ICT-509 </item>
+    </string-array>
+    <string-array name="eightMondayTeacher">
+        <item> Sadia Sultana </item>
+        <item> Md. Sharif Hossen </item>
+    </string-array>
+    <string-array name="eightMondayTime">
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="eightTuesdayCourse">
+        <item> ICT-509 </item>
+        <item> ICT-511 </item>
+        <item> ICT-507 </item>
+    </string-array>
+    <string-array name="eightTuesdayTeacher">
+        <item> Md. Sharif Hossen </item>
+        <item> Md. Rakib Hasan </item>
+        <item> Amena Begum </item>
+    </string-array>
+    <string-array name="eightTuesdayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+
+    <string-array name="eightWednesdayCourse">
+        <item> LAB </item>
+        <item> ICT-511 </item>
+        <item> ICT-507 </item>
+    </string-array>
+    <string-array name="eightWednesdayTeacher">
+        <item> Lab related course teacher </item>
+        <item> Md. Rakib Hasan </item>
+        <item> Amena Begum </item>
+    </string-array>
+    <string-array name="eightWednesdayTime">
+        <item> 9:15 AM </item>
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="eightThursdayCourse">
+        <item> ICT-501 </item>
+        <item> ICT-503 </item>
+        <item> ICT-505 </item>
+    </string-array>
+    <string-array name="eightThursdayTeacher">
+        <item> Sadia Sultana </item>
+        <item> Md. Ariful Islam </item>
+        <item> Md. Tofael Ahmed </item>
+    </string-array>
+    <string-array name="eightThursdayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nineSundayCourse">
+        <item> ICT-309 </item>
+        <item> ICT-305 </item>
+        <item> ICT-303 </item>
+        <item> ICT-301 </item>
+        <item> ICT-311 </item>
+    </string-array>
+    <string-array name="nineSundayTeacher">
+        <item> Md. Mehedi Hasan </item>
+        <item> Sadia Sultana </item>
+        <item> Md. Ariful Islam </item>
+        <item> Guest Teacher </item>
+        <item> Guest Teacher </item>
+    </string-array>
+    <string-array name="nineSundayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="nineMondayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="nineMondayTeacher">
+        <item>  </item>
+    </string-array>
+    <string-array name="nineMondayTime">
+        <item>  </item>
+    </string-array>
+
+    <string-array name="nineTuesdayCourse">
+        <item> ICT-309 </item>
+        <item> ICT-307 </item>
+        <item> ICT-305 </item>
+    </string-array>
+    <string-array name="nineTuesdayTeacher">
+        <item> Md. Mehedi Hasan </item>
+        <item> Md. Rakib Hasan </item>
+        <item> Sadia Sultana </item>
+    </string-array>
+    <string-array name="nineTuesdayTime">
+        <item> 12:15 PM </item>
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="nineWednesdayCourse">
+        <item> ICT-301 </item>
+        <item> ICT-305 </item>
+        <item> ICT-303 </item>
+        <item> LAB </item>
+        <item> ICT-307 </item>
+    </string-array>
+    <string-array name="nineWednesdayTeacher">
+        <item> Guest Teacher </item>
+        <item> Sadia Sultana </item>
+        <item> Md. Ariful Islam </item>
+        <item> Lab related course teacher </item>
+        <item> Md. Rakib Hasan </item>
+    </string-array>
+    <string-array name="nineWednesdayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="nineThursdayCourse">
+        <item> ICT-301 </item>
+        <item> ICT-311 </item>
+    </string-array>
+    <string-array name="nineThursdayTeacher">
+        <item> Guest Teacher </item>
+        <item> Guest Teacher </item>
+    </string-array>
+    <string-array name="nineThursdayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+    </string-array>
+
+</resources>

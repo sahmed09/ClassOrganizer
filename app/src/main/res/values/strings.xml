@@ -2,46 +2,42 @@
     <string name="app_name">Class Organizer</string>
 
     <string-array name="day_name">
-
         <item> Select a day </item>
         <item> Sunday </item>
         <item> Monday </item>
         <item> Tuesday </item>
         <item> Wednesday </item>
         <item> Thursday </item>
-
     </string-array>
 
     <string-array name="teacher_name">
-
         <item> Select name </item>
-        <item> Orvila Sarker </item>
-        <item> Sharif Hossain </item>
-        <item> Imran Hossain </item>
-        <item> MD. Tofael Ahmed </item>
-
+        <item> Md. Tofael Ahmed </item>
+        <item> Md. Imran Hossain </item>
+        <item> Md. Mehedi Hasan </item>
+        <item> Md. Sharif Hossen </item>
+        <item> Sadia Sultana </item>
+        <item> Md. Ariful Islam </item>
+        <item> Md. Rakib Hasan </item>
+        <item> Amena Begum </item>
     </string-array>
 
     <string-array name="student_batch">
-
         <item> Select Batch </item>
         <item> 6th Batch </item>
         <item> 7th Batch </item>
         <item> 8th Batch </item>
         <item> 9th Batch </item>
         <item> 10th Batch </item>
-
     </string-array>
 
     <string name="aboutUs">
-
         This app is developed by Shihab Ahmed\n
-        Department of ICT\n
-        Cumilla University\n
+        Department of ICT, 7th Batch\n
+        Comilla University\n
         ID : 11609009\n
         Mobile : 01772432557\n
         Email : shihab.ict.cou@gmail.com\n
-
     </string>
 
 </resources>

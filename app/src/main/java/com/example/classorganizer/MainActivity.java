@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //checking username and password
                 Boolean result = databaseHelper.findPassword(username,password);
 
-                if(result == true) {
+                if(result) {
                     //checking account type
                     String result2 = databaseHelper.findAccount(username);
                     if(result2.equals("student")) {
@@ -90,14 +90,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void usernameErrorMessage() {
         usernameEditText.setError("Please enter the user name");
         usernameEditText.requestFocus();
-        return;
     }
 
     //password error message generator
     public void passwordErrorMessage() {
         passwordEditText.setError("Enter a valid password");
         passwordEditText.requestFocus();
-        return;
     }
 
     @Override

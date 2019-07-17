@@ -47,7 +47,7 @@
             android:id="@+id/teacherShowDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Schedule"
+            android:text="View Schedule"
             android:layout_marginTop="10dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             style="@style/Widget.AppCompat.Button.Colored"/>

@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText nameEditText, emailEditText, usernameEditText, accountTypeEditText, passwordEditText;
@@ -20,7 +22,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_sign_up);
 
         //adding back button on Toolbar
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         nameEditText = findViewById(R.id.nameEditText);
@@ -45,7 +47,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String accountType = accountTypeEditText.getText().toString().toLowerCase();
         String password = passwordEditText.getText().toString();
 
-        Boolean accountCheck = false;
+        boolean accountCheck = false;
         if(accountType.equals("student") || accountType.equals("teacher")){
             accountCheck=true;
         }
@@ -57,32 +59,26 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         if(name.isEmpty()) {
             nameEditText.setError("Please enter name");
             nameEditText.requestFocus();
-            return;
         }
         else if(email.isEmpty()) {
             emailEditText.setError("Please enter your email address");
             emailEditText.requestFocus();
-            return;
         }
         else if(username.isEmpty()) {
             usernameEditText.setError("Please enter the user name");
             usernameEditText.requestFocus();
-            return;
         }
         else if(accountType.isEmpty()) {
             accountTypeEditText.setError("Please enter account type");
             accountTypeEditText.requestFocus();
-            return;
         }
         else if(password.isEmpty()) {
             passwordEditText.setError("Please enter password");
             passwordEditText.requestFocus();
-            return;
         }
         else if(password.length()<5) {
             passwordEditText.setError("Insert at least 5 characters");
             passwordEditText.requestFocus();
-            return;
         }
         else {
 

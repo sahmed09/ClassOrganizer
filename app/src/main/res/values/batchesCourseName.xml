@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sixthBatchCourseName">
+        ICT-701 : Telecommunication Engineering \n
+        ICT-703 : Management Information System \n
+        ICT-705 : Web Technologies And Programming \n
+        ICT-707 : Satellite Communication \n
+        ICT-709 : VLSI Circuits Design \n
+        ICT-711 : Network Security And Cyber Law \n
+        ICT-706 : Web Technologies And Programming Lab \n
+        ICT-710 : VLSI Circuits Design Lab
+    </string>
+
+    <string name="seventhBatchCourseName">
+        ICT-601 : Digital Signal Processing\n
+        ICT-603 : Digital Communication\n
+        ICT-605 : Mobile Application And Game Development\n
+        ICT-607 : Information Theory and Coding\n
+        ICT-609 : Telecommunication Engineering\n
+        ICT-602 : Digital Signal Processing Lab\n
+        ICT-604 : Digital Communication Lab\n
+        ICT-606 : Mobile Application And Game Development Lab\n
+        ICT-600 : Viva-voce
+    </string>
+
+    <string name="eighthBatchCourseName">
+        ICT-501 : Microwave Engineering\n
+        ICT-503 : Analog Communication\n
+        ICT-505 : Software Engineering\n
+        ICT-507 : Operating System\n
+        ICT-509 : Object Oriented Programming (Java)\n
+        ICT-511 : Computer Graphics\n
+        ICT-502 : Microwave Engineering Lab\n
+        ICT-504 : Analog Communication Lab\n
+        ICT-506 : Software Engineering Lab\n
+        ICT-508 : Operating System Lab\n
+        ICT-510 : Object Oriented Programming (Java) Lab\n
+        ICT-512 : Computer Graphics Lab
+    </string>
+
+    <string name="ninthBatchCourseName">
+        ICT-301 : Mathematics-III\n
+        ICT-303 : Object Oriented Programming (C++)\n
+        ICT-305 : Digital Logic Design\n
+        ICT-307 : Algorithm Design and Analysis\n
+        ICT-309 : Signals and Systems\n
+        ICT-311 : Financial and Managerial Accounting\n
+        ICT-304 : Object Oriented Programming (C++) Lab\n
+        ICT-306 : Digital Logic Design Lab\n
+        ICT-308 : Algorithm Design and Analysis Lab\n
+    </string>
+
+    <string name="tenthBatchCourseName">
+        ICT-201 : Mathematics-II\n
+        ICT-203 : Statistics\n
+        ICT-205 : Electronic Circuits\n
+        ICT-207 : Discrete Mathematics\n
+        ICT-209 : Data Structure\n
+        ICT-206 : Electronic Circuits Lab\n
+        ICT-210 : Data Structure Lab\n
+        ICT-200 : Viva-voce
+    </string>
+
+</resources>

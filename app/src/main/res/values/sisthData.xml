@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sixSundayCourse">
+        <item> ICT-709 </item>
+    </string-array>
+    <string-array name="sixSundayTeacher">
+        <item> Md. Mehedi Hasan </item>
+    </string-array>
+    <string-array name="sixSundayTime">
+        <item> 2:00 PM </item>
+    </string-array>
+
+    <string-array name="sixMondayCourse">
+        <item> LAB </item>
+        <item> ICT-711 </item>
+    </string-array>
+    <string-array name="sixMondayTeacher">
+        <item> Lab Related Course Teacher </item>
+        <item> Md. Imran Hossain </item>
+    </string-array>
+    <string-array name="sixMondayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+    </string-array>
+
+    <string-array name="sixTuesdayCourse">
+        <item> ICT-709 </item>
+    </string-array>
+    <string-array name="sixTuesdayTeacher">
+        <item> Md. Mehedi Hasan </item>
+    </string-array>
+    <string-array name="sixTuesdayTime">
+        <item> 2:00 PM </item>
+    </string-array>
+
+    <string-array name="sixWednesdayCourse">
+        <item> ICT-711 </item>
+    </string-array>
+    <string-array name="sixWednesdayTeacher">
+        <item> Md. Imran Hossain </item>
+    </string-array>
+    <string-array name="sixWednesdayTime">
+        <item> 2:00 PM </item>
+    </string-array>
+
+    <string-array name="sixThursdayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="sixThursdayTeacher">
+        <item>  </item>
+    </string-array>
+    <string-array name="sixThursdayTime">
+        <item>  </item>
+    </string-array>
+
+</resources>

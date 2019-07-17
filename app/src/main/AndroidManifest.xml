@@ -9,10 +9,13 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutUsActivity"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".FeedbackActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CourseDetails"></activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Teacher"
             android:parentActivityName=".MainActivity" />

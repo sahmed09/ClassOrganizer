@@ -6,6 +6,8 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import java.util.Objects;
+
 public class Teacher extends AppCompatActivity {
 
     Spinner teacherName,day;
@@ -17,7 +19,7 @@ public class Teacher extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         //hiding the action bar
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         //hiding the title bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -34,10 +36,10 @@ public class Teacher extends AppCompatActivity {
         teacherNames = getResources().getStringArray(R.array.teacher_name);
         days = getResources().getStringArray(R.array.day_name);
 
-        teacherAdapter = new ArrayAdapter<String>(this,R.layout.sample_view,R.id.sampleView,teacherNames);
+        teacherAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,teacherNames);
         teacherName.setAdapter(teacherAdapter);
 
-        dayAdapter = new ArrayAdapter<String>(this,R.layout.sample_view,R.id.sampleView,days);
+        dayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,days);
         day.setAdapter(dayAdapter);
     }
 }

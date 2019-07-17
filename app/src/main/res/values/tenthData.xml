@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tenSundayCourse">
+        <item> ICT-201 </item>
+    </string-array>
+    <string-array name="tenSundayTeacher">
+        <item> Guest Teacher </item>
+    </string-array>
+    <string-array name="tenSundayTime">
+        <item> 9:15 AM </item>
+    </string-array>
+
+    <string-array name="tenMondayCourse">
+        <item> ICT-201 </item>
+        <item> ICT-203 </item>
+        <item> ICT-205 </item>
+        <item> ICT-209 </item>
+    </string-array>
+    <string-array name="tenMondayTeacher">
+        <item> Guest Teacher </item>
+        <item> Guest Teacher </item>
+        <item> Md. Mehedi Hasan </item>
+        <item> Md. Tofael Ahmed </item>
+    </string-array>
+    <string-array name="tenMondayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+    <string-array name="tenTuesdayCourse">
+        <item> ICT-207 </item>
+    </string-array>
+    <string-array name="tenTuesdayTeacher">
+        <item> Amena Begum </item>
+    </string-array>
+    <string-array name="tenTuesdayTime">
+        <item> 10:45 AM </item>
+    </string-array>
+
+    <string-array name="tenWednesdayCourse">
+        <item> ICT-201 </item>
+        <item> ICT-203 </item>
+    </string-array>
+    <string-array name="tenWednesdayTeacher">
+        <item> Guest Teacher </item>
+        <item> Guest Teacher </item>
+    </string-array>
+    <string-array name="tenWednesdayTime">
+        <item> 9:15 AM </item>
+        <item> 10:45 AM </item>
+    </string-array>
+
+    <string-array name="tenThursdayCourse">
+        <item> ICT-207 </item>
+        <item> ICT-205 </item>
+        <item> ICT-209 </item>
+    </string-array>
+    <string-array name="tenThursdayTeacher">
+        <item> Amena Begum </item>
+        <item> Md. Mehedi Hasan </item>
+        <item> Md. Tofael Ahmed </item>
+    </string-array>
+    <string-array name="tenThursdayTime">
+        <item> 12:15 PM </item>
+        <item> 2:00 PM </item>
+        <item> 3:30 PM </item>
+    </string-array>
+
+</resources>

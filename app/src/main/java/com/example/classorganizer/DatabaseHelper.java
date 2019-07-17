@@ -24,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private Context context;
 
-    public DatabaseHelper(Context context) {
+    DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, VERSION_NUMBER);
         this.context = context;
     }
@@ -52,7 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    public long insertData(UserDetails userDetails) {
+    long insertData(UserDetails userDetails) {
 
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -66,11 +66,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return rowId;
     }
 
-    public Boolean findPassword(String uname, String pass) {
+    Boolean findPassword(String uname, String pass) {
 
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
-        Boolean result = false;
+        boolean result = false;
 
         if(cursor.getCount()==0) {
             Toast.makeText(context,"No Data is found", Toast.LENGTH_LONG).show();
@@ -90,7 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
-    public String findAccount(String un) {
+    String findAccount(String un) {
 
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
