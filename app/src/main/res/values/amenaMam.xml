@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="amenaMamSundayTime">
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="amenaMamSundayCourse">
+        <item> ICT-1003 </item>
+    </string-array>
+    <string-array name="amenaMamSundayBatch">
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+    <string-array name="amenaMamMondayTime">
+        <item> 10:45 AM </item>
+    </string-array>
+    <string-array name="amenaMamMondayCourse">
+        <item> ICT-1003 </item>
+    </string-array>
+    <string-array name="amenaMamMondayBatch">
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+    <string-array name="amenaMamTuesdayTime">
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+    <string-array name="amenaMamTuesdayCourse">
+        <item> ICT-207 </item>
+        <item> ICT-507 </item>
+    </string-array>
+    <string-array name="amenaMamTuesdayBatch">
+        <item> 10th Batch </item>
+        <item> 8th Batch </item>
+    </string-array>
+
+    <string-array name="amenaMamWednesdayTime">
+        <item> 09:15 AM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="amenaMamWednesdayCourse">
+        <item> ICT-603 </item>
+        <item> ICT-507 </item>
+    </string-array>
+    <string-array name="amenaMamWednesdayBatch">
+        <item> 7th Batch </item>
+        <item> 8th Batch </item>
+    </string-array>
+
+    <string-array name="amenaMamThursdayTime">
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+    <string-array name="amenaMamThursdayCourse">
+        <item> ICT-603 </item>
+        <item> ICT-207 </item>
+    </string-array>
+    <string-array name="amenaMamThursdayBatch">
+        <item> 7th Batch </item>
+        <item> 10th Batch </item>
+    </string-array>
+
+</resources>

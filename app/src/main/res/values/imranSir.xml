@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="imranSirSundayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="imranSirSundayCourse">
+        <item> ICT-1007 </item>
+    </string-array>
+    <string-array name="imranSirSundayBatch">
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+    <string-array name="imranSirMondayTime">
+        <item> 10:45 AM </item>
+    </string-array>
+    <string-array name="imranSirMondayCourse">
+        <item> ICT-711 </item>
+    </string-array>
+    <string-array name="imranSirMondayBatch">
+        <item> 6th Batch </item>
+    </string-array>
+
+    <string-array name="imranSirTuesdayTime">
+        <item>  </item>
+    </string-array>
+    <string-array name="imranSirTuesdayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="imranSirTuesdayBatch">
+        <item>  </item>
+    </string-array>
+
+    <string-array name="imranSirWednesdayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="imranSirWednesdayCourse">
+        <item> ICT-711 </item>
+    </string-array>
+    <string-array name="imranSirWednesdayBatch">
+        <item> 6th Batch </item>
+    </string-array>
+
+    <string-array name="imranSirThursdayTime">
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="imranSirThursdayCourse">
+        <item> ICT-1007 </item>
+    </string-array>
+    <string-array name="imranSirThursdayBatch">
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+</resources>

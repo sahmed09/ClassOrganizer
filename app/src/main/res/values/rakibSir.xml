@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="rakibSirSundayTime">
+        <item>  </item>
+    </string-array>
+    <string-array name="rakibSirSundayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="rakibSirSundayBatch">
+        <item>  </item>
+    </string-array>
+
+    <string-array name="rakibSirMondayTime">
+        <item> 09:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+    <string-array name="rakibSirMondayCourse">
+        <item> ICT-605 </item>
+        <item> ICT-607 </item>
+    </string-array>
+    <string-array name="rakibSirMondayBatch">
+        <item> 7th Batch </item>
+        <item> 7th Batch </item>
+    </string-array>
+
+    <string-array name="rakibSirTuesdayTime">
+        <item> 10:45 AM </item>
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="rakibSirTuesdayCourse">
+        <item> ICT-511 </item>
+        <item> ICT-307 </item>
+    </string-array>
+    <string-array name="rakibSirTuesdayBatch">
+        <item> 8th Batch </item>
+        <item> 9th Batch </item>
+    </string-array>
+
+    <string-array name="rakibSirWednesdayTime">
+        <item> 10:45 AM </item>
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="rakibSirWednesdayCourse">
+        <item> ICT-605 </item>
+        <item> ICT-511 </item>
+        <item> ICT-307 </item>
+    </string-array>
+    <string-array name="rakibSirWednesdayBatch">
+        <item> 7th Batch </item>
+        <item> 8th Batch </item>
+        <item> 9th Batch </item>
+    </string-array>
+
+    <string-array name="rakibSirThursdayTime">
+        <item> 09:15 AM </item>
+    </string-array>
+    <string-array name="rakibSirThursdayCourse">
+        <item> ICT-607 </item>
+    </string-array>
+    <string-array name="rakibSirThursdayBatch">
+        <item> 7th Batch </item>
+    </string-array>
+
+</resources>

@@ -8,7 +8,7 @@
         <item> Guest Teacher </item>
     </string-array>
     <string-array name="tenSundayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
     </string-array>
 
     <string-array name="tenMondayCourse">
@@ -24,10 +24,10 @@
         <item> Md. Tofael Ahmed </item>
     </string-array>
     <string-array name="tenMondayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
-        <item> 2:00 PM </item>
-        <item> 3:30 PM </item>
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
     </string-array>
 
     <string-array name="tenTuesdayCourse">
@@ -49,7 +49,7 @@
         <item> Guest Teacher </item>
     </string-array>
     <string-array name="tenWednesdayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
     </string-array>
 
@@ -65,8 +65,8 @@
     </string-array>
     <string-array name="tenThursdayTime">
         <item> 12:15 PM </item>
-        <item> 2:00 PM </item>
-        <item> 3:30 PM </item>
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
     </string-array>
 
 </resources>

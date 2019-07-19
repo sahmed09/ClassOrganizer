@@ -8,7 +8,7 @@
         <item> Md. Mehedi Hasan </item>
     </string-array>
     <string-array name="sixSundayTime">
-        <item> 2:00 PM </item>
+        <item> 02:00 PM </item>
     </string-array>
 
     <string-array name="sixMondayCourse">
@@ -20,7 +20,7 @@
         <item> Md. Imran Hossain </item>
     </string-array>
     <string-array name="sixMondayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
     </string-array>
 
@@ -31,7 +31,7 @@
         <item> Md. Mehedi Hasan </item>
     </string-array>
     <string-array name="sixTuesdayTime">
-        <item> 2:00 PM </item>
+        <item> 02:00 PM </item>
     </string-array>
 
     <string-array name="sixWednesdayCourse">
@@ -41,7 +41,7 @@
         <item> Md. Imran Hossain </item>
     </string-array>
     <string-array name="sixWednesdayTime">
-        <item> 2:00 PM </item>
+        <item> 02:00 PM </item>
     </string-array>
 
     <string-array name="sixThursdayCourse">

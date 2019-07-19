@@ -10,8 +10,8 @@
         <item> Md. Ariful Islam </item>
     </string-array>
     <string-array name="eightSundayTime">
-        <item> 2:00 PM </item>
-        <item> 3:30 PM </item>
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
     </string-array>
 
     <string-array name="eightMondayCourse">
@@ -23,8 +23,8 @@
         <item> Md. Sharif Hossen </item>
     </string-array>
     <string-array name="eightMondayTime">
-        <item> 2:00 PM </item>
-        <item> 3:30 PM </item>
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
     </string-array>
 
     <string-array name="eightTuesdayCourse">
@@ -38,7 +38,7 @@
         <item> Amena Begum </item>
     </string-array>
     <string-array name="eightTuesdayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
         <item> 12:15 PM </item>
     </string-array>
@@ -54,9 +54,9 @@
         <item> Amena Begum </item>
     </string-array>
     <string-array name="eightWednesdayTime">
-        <item> 9:15 AM </item>
-        <item> 2:00 PM </item>
-        <item> 3:30 PM </item>
+        <item> 09:15 AM </item>
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
     </string-array>
 
     <string-array name="eightThursdayCourse">
@@ -70,7 +70,7 @@
         <item> Md. Tofael Ahmed </item>
     </string-array>
     <string-array name="eightThursdayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
         <item> 12:15 PM </item>
     </string-array>

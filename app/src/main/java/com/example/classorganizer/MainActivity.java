@@ -65,12 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 if(result) {
                     //checking account type
-                    String result2 = databaseHelper.findAccount(username);
-                    if(result2.equals("student")) {
+                    String accountCheck = databaseHelper.findAccount(username);
+                    if(accountCheck.equals("student")) {
                         intent = new Intent(MainActivity.this,Student.class);
                         startActivity(intent);
                     }
-                    else if(result2.equals("teacher")) {
+                    else if(accountCheck.equals("teacher")) {
                         intent = new Intent(MainActivity.this,Teacher.class);
                         startActivity(intent);
                     }
@@ -157,10 +157,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent = new Intent(getApplicationContext(),FeedbackActivity.class);
             startActivity(intent);
         }
-        if(item.getItemId() == R.id.aboutUsId) {
+        else if(item.getItemId() == R.id.aboutUsId) {
 
             intent = new Intent(getApplicationContext(), AboutUsActivity.class);
             startActivity(intent);
+        }
+        else if(item.getItemId() == R.id.fullRoutineId) {
+
+            intent = new Intent();
         }
         return super.onOptionsItemSelected(item);
     }

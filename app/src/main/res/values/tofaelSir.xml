@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tofaelSirSundayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="tofaelSirSundayCourse">
+        <item> ICT-505 </item>
+    </string-array>
+    <string-array name="tofaelSirSundayBatch">
+        <item> 8th Batch </item>
+    </string-array>
+
+    <string-array name="tofaelSirMondayTime">
+        <item> 12:15 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="tofaelSirMondayCourse">
+        <item> ICT-1005 </item>
+        <item> ICT-209 </item>
+    </string-array>
+    <string-array name="tofaelSirMondayBatch">
+        <item> 5th Batch(MSc) </item>
+        <item> 10th Batch </item>
+    </string-array>
+
+    <string-array name="tofaelSirTuesdayTime">
+        <item>  </item>
+    </string-array>
+    <string-array name="tofaelSirTuesdayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="tofaelSirTuesdayBatch">
+        <item>  </item>
+    </string-array>
+
+    <string-array name="tofaelSirWednesdayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="tofaelSirWednesdayCourse">
+        <item> ICT-1005 </item>
+    </string-array>
+    <string-array name="tofaelSirWednesdayBatch">
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+    <string-array name="tofaelSirThursdayTime">
+        <item> 12:15 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="tofaelSirThursdayCourse">
+        <item> ICT-505 </item>
+        <item> ICT-209 </item>
+    </string-array>
+    <string-array name="tofaelSirThursdayBatch">
+        <item> 8th Batch </item>
+        <item> 10th Batch </item>
+    </string-array>
+
+</resources>

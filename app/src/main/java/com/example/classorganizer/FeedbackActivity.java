@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class FeedbackActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button feedbackSendButton,feedbackClearButton;
@@ -19,10 +21,10 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_feedback);
 
         //changing title bar name
-        getSupportActionBar().setTitle("Feedback");
+        this.setTitle("Feedback");
 
         //adding back button on Toolbar
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         feedbackSendButton = findViewById(R.id.feedbackSendButton);
@@ -43,15 +45,26 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
             String message = feedbackMessageEditText.getText().toString();
 
             if(v.getId() == R.id.feedbackSendButton) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/email");
 
-                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"shihab.ict.cou@gmail.com"});
+                if(name.isEmpty()) {
+                    feedbackNameEditText.setError("Please enter your name");
+                    feedbackNameEditText.requestFocus();
+                }
+                else if(message.isEmpty()) {
+                    feedbackMessageEditText.setError("Please enter your message");
+                    feedbackMessageEditText.requestFocus();
+                }
+                else {
+                    Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setType("text/email");
 
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback from app");
-                intent.putExtra(Intent.EXTRA_TEXT, "Name : " + name + "\nMessage : " + message);
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"shihab.ict.cou@gmail.com"});
 
-                startActivity(Intent.createChooser(intent, "Feedback with "));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback from app");
+                    intent.putExtra(Intent.EXTRA_TEXT, "Name : " + name + "\nMessage : " + message);
+
+                    startActivity(Intent.createChooser(intent, "Feedback with "));
+                }
             }
             else {
                 feedbackNameEditText.setText("");

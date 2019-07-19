@@ -37,7 +37,7 @@
 
         <Spinner
             android:id="@+id/dayNameTeacher"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
 
@@ -50,7 +50,23 @@
             android:text="View Schedule"
             android:layout_marginTop="10dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/teacherListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="1dp">
+
+        </ListView>
 
     </LinearLayout>
 

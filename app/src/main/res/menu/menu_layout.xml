@@ -17,4 +17,9 @@
         android:title="About Us"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/fullRoutineId"
+        android:title="View Full Routine"
+        app:showAsAction="never"/>
+
 </menu>

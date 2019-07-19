@@ -17,8 +17,8 @@
         android:textColor="#FFFFFFFF"
         android:drawableLeft="@drawable/ic_action_person"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="17sp"
         android:textStyle="bold"/>
 
@@ -30,8 +30,8 @@
         android:textColor="#FFFFFFFF"
         android:drawableLeft="@drawable/ic_action_email"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="17sp"
         android:textStyle="bold"/>
 
@@ -43,8 +43,8 @@
         android:textColor="#FFFFFFFF"
         android:drawableLeft="@drawable/ic_action_username"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="17sp"
         android:textStyle="bold"/>
 
@@ -56,8 +56,8 @@
         android:textColor="#FFFFFFFF"
         android:drawableLeft="@drawable/ic_action_accounttype"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="17sp"
         android:textStyle="bold"/>
 
@@ -65,13 +65,13 @@
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" Create Password (at least 5 characters)"
+        android:hint=" Create Password(at least 5 characters)"
         android:textColor="#FFFFFFFF"
         android:inputType="textPassword"
         android:drawableLeft="@drawable/ic_action_password"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="17sp"
         android:textStyle="bold"/>
 
@@ -84,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:textAllCaps="false"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
 </LinearLayout>

@@ -17,7 +17,7 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
 
     Spinner batchPicker,dayPicker;
     Button viewButton,showCourseButton;
-    ListView listView;
+    ListView studentListView;
     String[] studentBatches,days;
     ArrayAdapter<String> batchArrayAdapter,dayArrayAdapter;
     CustomAdapter customAdapter;
@@ -56,22 +56,21 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
 
         //hiding the action bar
-        //getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         //hiding the title bar
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        this.setTitle("Student Corner");
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
 
         //adding back button on Toolbar
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         batchPicker = findViewById(R.id.studentBatch);
         dayPicker = findViewById(R.id.dayNameStudent);
         viewButton = findViewById(R.id.showSchedule);
         showCourseButton = findViewById(R.id.courseDetails);
-        listView = findViewById(R.id.studentListView);
+        studentListView = findViewById(R.id.studentListView);
         viewButton.setOnClickListener(this);
         showCourseButton.setOnClickListener(this);
 
@@ -178,23 +177,23 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
                     switch (day) {
                         case "Sunday":
                             customAdapter = new CustomAdapter(this, sixSundayTime, sixSundayCourse, sixSundayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Monday":
                             customAdapter = new CustomAdapter(this, sixMondayTime, sixMondayCourse, sixMondayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Tuesday":
                             customAdapter = new CustomAdapter(this, sixTuesdayTime, sixTuesdayCourse, sixTuesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Wednesday":
                             customAdapter = new CustomAdapter(this, sixWednesdayTime, sixWednesdayCourse, sixWednesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Thursday":
                             customAdapter = new CustomAdapter(this, sixThursdayTime, sixThursdayCourse, sixThursdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                     }
                     break;
@@ -202,23 +201,23 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
                     switch (day) {
                         case "Sunday":
                             customAdapter = new CustomAdapter(this, sevenSundayTime, sevenSundayCourse, sevenSundayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Monday":
                             customAdapter = new CustomAdapter(this, sevenMondayTime, sevenMondayCourse, sevenMondayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Tuesday":
                             customAdapter = new CustomAdapter(this, sevenTuesdayTime, sevenTuesdayCourse, sevenTuesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Wednesday":
                             customAdapter = new CustomAdapter(this, sevenWednesdayTime, sevenWednesdayCourse, sevenWednesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Thursday":
                             customAdapter = new CustomAdapter(this, sevenThursdayTime, sevenThursdayCourse, sevenThursdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                     }
                     break;
@@ -226,23 +225,23 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
                     switch (day) {
                         case "Sunday":
                             customAdapter = new CustomAdapter(this, eightSundayTime, eightSundayCourse, eightSundayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Monday":
                             customAdapter = new CustomAdapter(this, eightMondayTime, eightMondayCourse, eightMondayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Tuesday":
                             customAdapter = new CustomAdapter(this, eightTuesdayTime, eightTuesdayCourse, eightTuesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Wednesday":
                             customAdapter = new CustomAdapter(this, eightWednesdayTime, eightWednesdayCourse, eightWednesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Thursday":
                             customAdapter = new CustomAdapter(this, eightThursdayTime, eightThursdayCourse, eightThursdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                     }
                     break;
@@ -250,23 +249,23 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
                     switch (day) {
                         case "Sunday":
                             customAdapter = new CustomAdapter(this, nineSundayTime, nineSundayCourse, nineSundayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Monday":
                             customAdapter = new CustomAdapter(this, nineMondayTime, nineMondayCourse, nineMondayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Tuesday":
                             customAdapter = new CustomAdapter(this, nineTuesdayTime, nineTuesdayCourse, nineTuesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Wednesday":
                             customAdapter = new CustomAdapter(this, nineWednesdayTime, nineWednesdayCourse, nineWednesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Thursday":
                             customAdapter = new CustomAdapter(this, nineThursdayTime, nineThursdayCourse, nineThursdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                     }
                     break;
@@ -274,30 +273,30 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
                     switch (day) {
                         case "Sunday":
                             customAdapter = new CustomAdapter(this, tenSundayTime, tenSundayCourse, tenSundayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Monday":
                             customAdapter = new CustomAdapter(this, tenMondayTime, tenMondayCourse, tenMondayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Tuesday":
                             customAdapter = new CustomAdapter(this, tenTuesdayTime, tenTuesdayCourse, tenTuesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Wednesday":
                             customAdapter = new CustomAdapter(this, tenWednesdayTime, tenWednesdayCourse, tenWednesdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                         case "Thursday":
                             customAdapter = new CustomAdapter(this, tenThursdayTime, tenThursdayCourse, tenThursdayTeacher);
-                            listView.setAdapter(customAdapter);
+                            studentListView.setAdapter(customAdapter);
                             break;
                     }
                     break;
                 case "Select Batch":
                     switch (day) {
                         case "Select a day":
-                            listView.setAdapter(null);
+                            studentListView.setAdapter(null);
                             break;
                     }
                     break;

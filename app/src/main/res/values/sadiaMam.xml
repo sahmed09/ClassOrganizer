@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sadiaMamSundayTime">
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+    <string-array name="sadiaMamSundayCourse">
+        <item> ICT-305 </item>
+        <item> ICT-609 </item>
+    </string-array>
+    <string-array name="sadiaMamSundayBatch">
+        <item> 9th Batch </item>
+        <item> 7th Batch </item>
+    </string-array>
+
+    <string-array name="sadiaMamMondayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="sadiaMamMondayCourse">
+        <item> ICT-501 </item>
+    </string-array>
+    <string-array name="sadiaMamMondayBatch">
+        <item> 8th Batch </item>
+    </string-array>
+
+    <string-array name="sadiaMamTuesdayTime">
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="sadiaMamTuesdayCourse">
+        <item> ICT-305 </item>
+    </string-array>
+    <string-array name="sadiaMamTuesdayBatch">
+        <item> 9th Batch </item>
+    </string-array>
+
+    <string-array name="sadiaMamWednesdayTime">
+        <item> 10:45 AM </item>
+        <item> 15:15 PM </item>
+    </string-array>
+    <string-array name="sadiaMamWednesdayCourse">
+        <item> ICT-305 </item>
+        <item> ICT-609 </item>
+    </string-array>
+    <string-array name="sadiaMamWednesdayBatch">
+        <item> 9th Batch </item>
+        <item> 7th Batch </item>
+    </string-array>
+
+    <string-array name="sadiaMamThursdayTime">
+        <item> 09:15 AM </item>
+    </string-array>
+    <string-array name="sadiaMamThursdayCourse">
+        <item> ICT-501 </item>
+    </string-array>
+    <string-array name="sadiaMamThursdayBatch">
+        <item> 8th Batch </item>
+    </string-array>
+
+</resources>

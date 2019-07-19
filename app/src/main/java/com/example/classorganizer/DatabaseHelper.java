@@ -17,7 +17,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String USERNAME = "Username";
     private static final String ACCOUNT_TYPE = "Account_Type";
     private static final String PASSWORD = "Password";
-    private static final int VERSION_NUMBER = 2;
+    private static final int VERSION_NUMBER = 3;
 
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "( " + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + NAME + " VARCHAR(255) NOT NULL, " + EMAIL + " TEXT NOT NULL, " + USERNAME + " TEXT NOT NULL, " + ACCOUNT_TYPE + " TEXT NOT NULL, " + PASSWORD + " TEXT NOT NULL );";
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
@@ -34,7 +34,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         try {
             db.execSQL(CREATE_TABLE);
-            Toast.makeText(context,"onCreate is called", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context,"onCreate is called", Toast.LENGTH_LONG).show();
         } catch(Exception e) {
             Toast.makeText(context,"Exception : " + e, Toast.LENGTH_LONG).show();
         }
@@ -46,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         try {
             db.execSQL(DROP_TABLE);
             onCreate(db);
-            Toast.makeText(context,"onUpgrade is called", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context,"onUpgrade is called", Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             Toast.makeText(context,"Exception : " + e, Toast.LENGTH_LONG).show();
         }
@@ -72,10 +72,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
         boolean result = false;
 
-        if(cursor.getCount()==0) {
+        /*if(cursor.getCount()==0) {
             Toast.makeText(context,"No Data is found", Toast.LENGTH_LONG).show();
-        }
-        else {
+        }*/
+        //else {
             while (cursor.moveToNext()) {
 
                 String username = cursor.getString(3);
@@ -86,7 +86,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     break;
                 }
             }
-        }
+        //}
+        return result;
+    }
+
+    Boolean findUsername(String uname) {
+
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
+        boolean result = false;
+
+        /*if(cursor.getCount() == 0) {
+            //Toast.makeText(context,"No Data is found", Toast.LENGTH_LONG).show();
+        }*/
+        //else {
+            while (cursor.moveToNext()) {
+
+                String username = cursor.getString(3);
+
+                if(username.equals(uname)) {
+                    result = true;
+                    break;
+                }
+            }
+        //}
         return result;
     }
 
@@ -96,10 +119,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
         String account="";
 
-        if(cursor.getCount()==0) {
+        /*if(cursor.getCount()==0) {
             Toast.makeText(context,"No Data is found", Toast.LENGTH_LONG).show();
-        }
-        else {
+        }*/
+        //else {
             while (cursor.moveToNext()) {
 
                 String username = cursor.getString(3);
@@ -110,7 +133,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     break;
                 }
             }
-        }
+        //}
         return account;
     }
 }

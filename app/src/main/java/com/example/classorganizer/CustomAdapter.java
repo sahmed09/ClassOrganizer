@@ -11,7 +11,6 @@ public class CustomAdapter extends BaseAdapter {
 
     private Context context;
     private String[] classTime,courseName,courseTeacher;
-    private LayoutInflater inflater;
 
     CustomAdapter(Context context, String[] classTime, String[] courseName, String[] courseTeacher) {
         this.context = context;
@@ -39,7 +38,7 @@ public class CustomAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         if(convertView == null) {
-            inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.sample_view,parent,false);
         }
 

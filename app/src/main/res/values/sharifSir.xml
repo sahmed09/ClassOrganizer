@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sharifSirSundayTime">
+        <item>  </item>
+    </string-array>
+    <string-array name="sharifSirSundayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="sharifSirSundayBatch">
+        <item>  </item>
+    </string-array>
+
+    <string-array name="sharifSirMondayTime">
+        <item> 09:15 AM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="sharifSirMondayCourse">
+        <item> ICT-1009 </item>
+        <item> ICT-509 </item>
+    </string-array>
+    <string-array name="sharifSirMondayBatch">
+        <item> 5th Batch(MSc) </item>
+        <item> 8th Batch </item>
+    </string-array>
+
+    <string-array name="sharifSirTuesdayTime">
+        <item> 09:15 AM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="sharifSirTuesdayCourse">
+        <item> ICT-509 </item>
+        <item> ICT-1009 </item>
+    </string-array>
+    <string-array name="sharifSirTuesdayBatch">
+        <item> 8th Batch </item>
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+    <string-array name="sharifSirWednesdayTime">
+        <item>  </item>
+    </string-array>
+    <string-array name="sharifSirWednesdayCourse">
+        <item> No Classes </item>
+    </string-array>
+    <string-array name="sharifSirWednesdayBatch">
+        <item>  </item>
+    </string-array>
+
+    <string-array name="sharifSirThursdayTime">
+        <item>  </item>
+    </string-array>
+    <string-array name="sharifSirThursdayCourse">
+        <item> No Classes</item>
+    </string-array>
+    <string-array name="sharifSirThursdayBatch">
+        <item>  </item>
+    </string-array>
+
+</resources>

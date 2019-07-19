@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arifulSirSundayTime">
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+    <string-array name="arifulSirSundayCourse">
+        <item> ICT-601 </item>
+        <item> ICT-303 </item>
+        <item> ICT-503 </item>
+    </string-array>
+    <string-array name="arifulSirSundayBatch">
+        <item> 7th Batch </item>
+        <item> 9th Batch </item>
+        <item> 8th Batch </item>
+    </string-array>
+
+    <string-array name="arifulSirMondayTime">
+        <item> 10:45 AM </item>
+    </string-array>
+    <string-array name="arifulSirMondayCourse">
+        <item> ICT-601 </item>
+    </string-array>
+    <string-array name="arifulSirMondayBatch">
+        <item> 7th Batch </item>
+    </string-array>
+
+    <string-array name="arifulSirTuesdayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="arifulSirTuesdayCourse">
+        <item> ICT-1001 </item>
+    </string-array>
+    <string-array name="arifulSirTuesdayBatch">
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+    <string-array name="arifulSirWednesdayTime">
+        <item> 12:15 PM </item>
+    </string-array>
+    <string-array name="arifulSirWednesdayCourse">
+        <item> ICT-303 </item>
+    </string-array>
+    <string-array name="arifulSirWednesdayBatch">
+        <item> 9th Batch </item>
+    </string-array>
+
+    <string-array name="arifulSirThursdayTime">
+        <item> 10:45 AM </item>
+        <item> 02:00 PM </item>
+    </string-array>
+    <string-array name="arifulSirThursdayCourse">
+        <item> ICT-503 </item>
+        <item> ICT-1001 </item>
+    </string-array>
+    <string-array name="arifulSirThursdayBatch">
+        <item> 8th Batch </item>
+        <item> 5th Batch(MSc) </item>
+    </string-array>
+
+</resources>

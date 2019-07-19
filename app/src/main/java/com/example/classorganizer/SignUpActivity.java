@@ -47,14 +47,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String accountType = accountTypeEditText.getText().toString().toLowerCase();
         String password = passwordEditText.getText().toString();
 
+        //checking username is already taken or not
+        Boolean findUsername = databaseHelper.findUsername(username);
         boolean accountCheck = false;
         if(accountType.equals("student") || accountType.equals("teacher")){
             accountCheck=true;
-        }
-        if(!accountCheck){
-            accountTypeEditText.setError("Please check your spelling");
-            accountTypeEditText.requestFocus();
-            return;
         }
         if(name.isEmpty()) {
             nameEditText.setError("Please enter name");
@@ -68,8 +65,16 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             usernameEditText.setError("Please enter the user name");
             usernameEditText.requestFocus();
         }
+        else if(findUsername) {
+            usernameEditText.setError("username already taken");
+            usernameEditText.requestFocus();
+        }
         else if(accountType.isEmpty()) {
             accountTypeEditText.setError("Please enter account type");
+            accountTypeEditText.requestFocus();
+        }
+        else if(!accountCheck){
+            accountTypeEditText.setError("Please check your spelling");
             accountTypeEditText.requestFocus();
         }
         else if(password.isEmpty()) {
@@ -91,10 +96,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             long rowId = databaseHelper.insertData(userDetails);
 
             if(rowId == -1) {
-                Toast.makeText(getApplicationContext(),"Data insertion failed",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Registration failed",Toast.LENGTH_LONG).show();
             }
             else {
-                Toast.makeText(getApplicationContext(),"Data is successfully inserted",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Registration completed",Toast.LENGTH_LONG).show();
                 nameEditText.setText("");
                 emailEditText.setText("");
                 usernameEditText.setText("");

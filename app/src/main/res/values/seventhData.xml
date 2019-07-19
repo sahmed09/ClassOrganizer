@@ -25,7 +25,7 @@
         <item> Md. Rakib Hasan </item>
     </string-array>
     <string-array name="sevenMondayTime">
-        <item> 9:45 AM </item>
+        <item> 09:45 AM </item>
         <item> 10:45 AM </item>
         <item> 12:15 PM </item>
     </string-array>
@@ -37,7 +37,7 @@
         <item> Lab Related Course Teacher </item>
     </string-array>
     <string-array name="sevenTuesdayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
     </string-array>
 
     <string-array name="sevenWednesdayCourse">
@@ -51,7 +51,7 @@
         <item> Sadia Sultana </item>
     </string-array>
     <string-array name="sevenWednesdayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
         <item> 12:15 PM </item>
     </string-array>
@@ -65,7 +65,7 @@
         <item> Amena Begum </item>
     </string-array>
     <string-array name="sevenThursdayTime">
-        <item> 9:15 AM </item>
+        <item> 09:15 AM </item>
         <item> 10:45 AM </item>
     </string-array>
 
