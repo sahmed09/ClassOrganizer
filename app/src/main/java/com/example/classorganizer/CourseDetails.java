@@ -22,7 +22,11 @@ public class CourseDetails extends AppCompatActivity {
 
             String value = bundle.getString("batchName");
 
-            if ("6th Batch".equals(value)) {
+            if ("5th Batch(MSc)".equals(value)) {
+                batchName.setText(value);
+                courseName.setText(R.string.fifthBatchCourseName);
+
+            }else if ("6th Batch".equals(value)) {
                 batchName.setText(value);
                 courseName.setText(R.string.sixthBatchCourseName);
 

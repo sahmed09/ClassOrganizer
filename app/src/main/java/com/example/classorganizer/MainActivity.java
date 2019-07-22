@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //username error message generator
     public void usernameErrorMessage() {
-        usernameEditText.setError("Please enter the user name");
+        usernameEditText.setError("Enter user name");
         usernameEditText.requestFocus();
     }
 
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.setType("text/plain");
 
             String subject = "Class Routine App";
-            String body = "Help to know the time schedule of class";
+            String body = "Help to know the time schedule of class.\n com.example.classorganizer";
 
             intent.putExtra(Intent.EXTRA_SUBJECT,subject);
             intent.putExtra(Intent.EXTRA_TEXT,body);

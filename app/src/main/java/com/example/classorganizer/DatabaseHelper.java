@@ -17,7 +17,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String USERNAME = "Username";
     private static final String ACCOUNT_TYPE = "Account_Type";
     private static final String PASSWORD = "Password";
-    private static final int VERSION_NUMBER = 3;
+    private static final int VERSION_NUMBER = 4;
 
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "( " + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + NAME + " VARCHAR(255) NOT NULL, " + EMAIL + " TEXT NOT NULL, " + USERNAME + " TEXT NOT NULL, " + ACCOUNT_TYPE + " TEXT NOT NULL, " + PASSWORD + " TEXT NOT NULL );";
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
@@ -90,6 +90,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    String findAccount(String un) {
+
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
+        String account="";
+
+        /*if(cursor.getCount()==0) {
+            Toast.makeText(context,"No Data is found", Toast.LENGTH_LONG).show();
+        }*/
+        //else {
+        while (cursor.moveToNext()) {
+
+            String username = cursor.getString(3);
+            String accountType = cursor.getString(4);
+
+            if(username.equals(un)) {
+                account = accountType;
+                break;
+            }
+        }
+        //}
+        return account;
+    }
+
     Boolean findUsername(String uname) {
 
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
@@ -111,29 +135,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         //}
         return result;
-    }
-
-    String findAccount(String un) {
-
-        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
-        String account="";
-
-        /*if(cursor.getCount()==0) {
-            Toast.makeText(context,"No Data is found", Toast.LENGTH_LONG).show();
-        }*/
-        //else {
-            while (cursor.moveToNext()) {
-
-                String username = cursor.getString(3);
-                String accountType = cursor.getString(4);
-
-                if(username.equals(un)) {
-                    account = accountType;
-                    break;
-                }
-            }
-        //}
-        return account;
     }
 }

@@ -21,7 +21,7 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_feedback);
 
         //changing title bar name
-        this.setTitle("Feedback");
+        this.setTitle("Report problem");
 
         //adding back button on Toolbar
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -59,7 +59,6 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
                     intent.setType("text/email");
 
                     intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"shihab.ict.cou@gmail.com"});
-
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback from app");
                     intent.putExtra(Intent.EXTRA_TEXT, "Name : " + name + "\nMessage : " + message);
 

@@ -22,6 +22,12 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
     ArrayAdapter<String> batchArrayAdapter,dayArrayAdapter;
     CustomAdapter customAdapter;
 
+    String[] fifthSundayTime,fifthSundayCourse,fifthSundayTeacher;
+    String[] fifthMondayTime,fifthMondayCourse,fifthMondayTeacher;
+    String[] fifthTuesdayTime,fifthTuesdayCourse,fifthTuesdayTeacher;
+    String[] fifthWednesdayTime,fifthWednesdayCourse,fifthWednesdayTeacher;
+    String[] fifthThursdayTime,fifthThursdayCourse,fifthThursdayTeacher;
+
     String[] sixSundayTime,sixSundayCourse,sixSundayTeacher;
     String[] sixMondayTime,sixMondayCourse,sixMondayTeacher;
     String[] sixTuesdayTime,sixTuesdayCourse,sixTuesdayTeacher;
@@ -82,6 +88,22 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
 
         dayArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, days);
         dayPicker.setAdapter(dayArrayAdapter);
+
+        fifthSundayTime = getResources().getStringArray(R.array.fifthSundayTime);
+        fifthMondayTime = getResources().getStringArray(R.array.fifthMondayTime);
+        fifthTuesdayTime = getResources().getStringArray(R.array.fifthTuesdayTime);
+        fifthWednesdayTime = getResources().getStringArray(R.array.fifthWednesdayTime);
+        fifthThursdayTime = getResources().getStringArray(R.array.fifthThursdayTime);
+        fifthSundayCourse = getResources().getStringArray(R.array.fifthSundayCourse);
+        fifthMondayCourse = getResources().getStringArray(R.array.fifthMondayCourse);
+        fifthTuesdayCourse = getResources().getStringArray(R.array.fifthTuesdayCourse);
+        fifthWednesdayCourse = getResources().getStringArray(R.array.fifthWednesdayCourse);
+        fifthThursdayCourse = getResources().getStringArray(R.array.fifthThursdayCourse);
+        fifthSundayTeacher = getResources().getStringArray(R.array.fifthSundayTeacher);
+        fifthMondayTeacher = getResources().getStringArray(R.array.fifthMondayTeacher);
+        fifthTuesdayTeacher = getResources().getStringArray(R.array.fifthTuesdayTeacher);
+        fifthWednesdayTeacher = getResources().getStringArray(R.array.fifthWednesdayTeacher);
+        fifthThursdayTeacher = getResources().getStringArray(R.array.fifthThursdayTeacher);
 
         sixSundayTime = getResources().getStringArray(R.array.sixSundayTime);
         sixMondayTime = getResources().getStringArray(R.array.sixMondayTime);
@@ -173,6 +195,30 @@ public class Student extends AppCompatActivity implements View.OnClickListener {
             String day = dayPicker.getSelectedItem().toString();
 
             switch (batch) {
+                case "5th Batch(MSc)":
+                    switch (day) {
+                        case "Sunday":
+                            customAdapter = new CustomAdapter(this, fifthSundayTime, fifthSundayCourse, fifthSundayTeacher);
+                            studentListView.setAdapter(customAdapter);
+                            break;
+                        case "Monday":
+                            customAdapter = new CustomAdapter(this, fifthMondayTime, fifthMondayCourse, fifthMondayTeacher);
+                            studentListView.setAdapter(customAdapter);
+                            break;
+                        case "Tuesday":
+                            customAdapter = new CustomAdapter(this, fifthTuesdayTime, fifthTuesdayCourse, fifthTuesdayTeacher);
+                            studentListView.setAdapter(customAdapter);
+                            break;
+                        case "Wednesday":
+                            customAdapter = new CustomAdapter(this, fifthWednesdayTime, fifthWednesdayCourse, fifthWednesdayTeacher);
+                            studentListView.setAdapter(customAdapter);
+                            break;
+                        case "Thursday":
+                            customAdapter = new CustomAdapter(this, fifthThursdayTime, fifthThursdayCourse, fifthThursdayTeacher);
+                            studentListView.setAdapter(customAdapter);
+                            break;
+                    }
+                    break;
                 case "6th Batch":
                     switch (day) {
                         case "Sunday":

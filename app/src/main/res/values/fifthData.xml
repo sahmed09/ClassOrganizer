@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fifthSundayCourse">
+        <item> ICT-1007 </item>
+        <item> ICT-1003 </item>
+    </string-array>
+    <string-array name="fifthSundayTeacher">
+        <item> Md. Imran Hossain </item>
+        <item> Amena Begum </item>
+    </string-array>
+    <string-array name="fifthSundayTime">
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+
+    <string-array name="fifthMondayCourse">
+        <item> ICT-1009 </item>
+        <item> ICT-1003 </item>
+        <item> ICT-1005 </item>
+    </string-array>
+    <string-array name="fifthMondayTeacher">
+        <item> Md. Sharif Hossen </item>
+        <item> Amena Begum </item>
+        <item> Md. Tofael Ahmed </item>
+    </string-array>
+    <string-array name="fifthMondayTime">
+        <item> 09:15 AM </item>
+        <item> 10:45 AM </item>
+        <item> 12:15 PM </item>
+    </string-array>
+
+    <string-array name="fifthTuesdayCourse">
+        <item> ICT-1001 </item>
+        <item> ICT-1009 </item>
+    </string-array>
+    <string-array name="fifthTuesdayTeacher">
+        <item> Md. Ariful Islam </item>
+        <item> Md. Sharif Hossen </item>
+    </string-array>
+    <string-array name="fifthTuesdayTime">
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+
+    <string-array name="fifthWednesdayCourse">
+        <item> ICT-1005 </item>
+    </string-array>
+    <string-array name="fifthWednesdayTeacher">
+        <item> Md. Tofael Ahmed </item>
+    </string-array>
+    <string-array name="fifthWednesdayTime">
+        <item> 02:00 PM </item>
+    </string-array>
+
+    <string-array name="fifthThursdayCourse">
+        <item> ICT-1001 </item>
+        <item> ICT-1007 </item>
+    </string-array>
+    <string-array name="fifthThursdayTeacher">
+        <item> Md. Ariful Islam </item>
+        <item> Md. Imran Hossain </item>
+    </string-array>
+    <string-array name="fifthThursdayTime">
+        <item> 02:00 PM </item>
+        <item> 03:30 PM </item>
+    </string-array>
+
+</resources>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="fifthBatchCourseName">
+        ICT-1001 : Advanced Wireless Communication\n
+        ICT-1003 : Multimedia Communication\n
+        ICT-1005 : Data Mining\n
+        ICT-1007 : Wireless Sensor Networks\n
+        ICT-1009 : Network Design and Optimization\n
+        ICT-1000 : Board Viva-voce\n
+    </string>
+
     <string name="sixthBatchCourseName">
         ICT-701 : Telecommunication Engineering \n
         ICT-703 : Management Information System \n

@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CourseDetails"></activity>
+        <activity android:name=".FullRoutine"></activity>
+        <activity android:name=".CourseDetails" />
         <activity
             android:name=".AboutUsActivity"
             android:parentActivityName=".MainActivity" />

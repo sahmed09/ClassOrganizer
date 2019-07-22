@@ -11,13 +11,14 @@ import java.util.Objects;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText nameEditText, emailEditText, usernameEditText, accountTypeEditText, passwordEditText;
+    EditText nameEditText, emailEditText, usernameEditText, accountTypeEditText, passwordEditText, confirmPasswordEditText;
     Button signUpButton;
     UserDetails userDetails;
     DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setTitle("Sign Up");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
@@ -30,6 +31,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         usernameEditText = findViewById(R.id.userNameSignUp);
         accountTypeEditText = findViewById(R.id.accountType);
         passwordEditText = findViewById(R.id.passwordEditText);
+        confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
 
         signUpButton = findViewById(R.id.signUpButton);
 
@@ -46,23 +48,29 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String username = usernameEditText.getText().toString();
         String accountType = accountTypeEditText.getText().toString().toLowerCase();
         String password = passwordEditText.getText().toString();
+        String confirmPassword = confirmPasswordEditText.getText().toString();
 
         //checking username is already taken or not
         Boolean findUsername = databaseHelper.findUsername(username);
+
         boolean accountCheck = false;
+        boolean matchPassword = false;
         if(accountType.equals("student") || accountType.equals("teacher")){
-            accountCheck=true;
+            accountCheck = true;
+        }
+        if(confirmPassword.equals(password)){
+            matchPassword = true;
         }
         if(name.isEmpty()) {
-            nameEditText.setError("Please enter name");
+            nameEditText.setError("Enter your name");
             nameEditText.requestFocus();
         }
         else if(email.isEmpty()) {
-            emailEditText.setError("Please enter your email address");
+            emailEditText.setError("Enter your email address");
             emailEditText.requestFocus();
         }
         else if(username.isEmpty()) {
-            usernameEditText.setError("Please enter the user name");
+            usernameEditText.setError("Enter user name");
             usernameEditText.requestFocus();
         }
         else if(findUsername) {
@@ -70,7 +78,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             usernameEditText.requestFocus();
         }
         else if(accountType.isEmpty()) {
-            accountTypeEditText.setError("Please enter account type");
+            accountTypeEditText.setError("Enter account type");
             accountTypeEditText.requestFocus();
         }
         else if(!accountCheck){
@@ -78,12 +86,20 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             accountTypeEditText.requestFocus();
         }
         else if(password.isEmpty()) {
-            passwordEditText.setError("Please enter password");
+            passwordEditText.setError("Enter password");
             passwordEditText.requestFocus();
         }
         else if(password.length()<5) {
             passwordEditText.setError("Insert at least 5 characters");
             passwordEditText.requestFocus();
+        }
+        else if(confirmPassword.isEmpty()) {
+            confirmPasswordEditText.setError("Retype your password");
+            confirmPasswordEditText.requestFocus();
+        }
+        else if(!matchPassword) {
+            confirmPasswordEditText.setError("Password didn't match");
+            confirmPasswordEditText.requestFocus();
         }
         else {
 
