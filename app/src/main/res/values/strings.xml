@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Class Organizer</string>
 
+    <string name="student_schedule"> Student Schedule </string>
+    <string name="teacher_schedule"> Teacher Schedule </string>
+
     <string-array name="day_name">
         <item> Select a day </item>
         <item> Sunday </item>

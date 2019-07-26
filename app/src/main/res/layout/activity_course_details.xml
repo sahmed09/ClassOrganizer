@@ -25,6 +25,8 @@
         android:text="Batch"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"/>
+        android:textAlignment="viewStart"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:ignore="RtlCompat" />
 
 </LinearLayout>

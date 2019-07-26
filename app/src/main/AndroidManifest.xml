@@ -10,22 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FullRoutine"></activity>
-        <activity android:name=".CourseDetails" />
+        <activity android:name=".CourseDetails"
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".AboutUsActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".FeedbackActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".Teacher"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".Student"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".SignUpActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"/>
     </application>
 
 </manifest>

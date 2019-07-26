@@ -2,100 +2,51 @@ package com.example.classorganizer;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText usernameEditText,passwordEditText;
-    Button loginButton,signUpHereButton;
+    CardView studentCardView, teacherCardView;
     Intent intent;
-    DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         //hiding the action bar
         //getSupportActionBar().hide();
         //hiding the title bar
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        usernameEditText = findViewById(R.id.userName);
-        passwordEditText = findViewById(R.id.password);
+        studentCardView = findViewById(R.id.studentSchedule);
+        teacherCardView = findViewById(R.id.teacherSchedule);
 
-        loginButton = findViewById(R.id.loginButton);
-        signUpHereButton = findViewById(R.id.signUpHereButton);
+        studentCardView.setOnClickListener(this);
+        teacherCardView.setOnClickListener(this);
 
-        loginButton.setOnClickListener(this);
-        signUpHereButton.setOnClickListener(this);
-
-        databaseHelper = new DatabaseHelper(this);
-        SQLiteDatabase sqLiteDatabase = databaseHelper.getWritableDatabase();
     }
 
     @Override
     public void onClick(View v) {
 
-        String username = usernameEditText.getText().toString();
-        String password = passwordEditText.getText().toString();
+        if(v.getId() == R.id.studentSchedule) {
 
-        if(v.getId() == R.id.loginButton) {
-            if(username.isEmpty()) {
-                usernameErrorMessage();
-            }
-            else if(password.isEmpty()) {
-                passwordErrorMessage();
-            }
-            else {
-                //checking username and password
-                Boolean result = databaseHelper.findPassword(username,password);
-
-                if(result) {
-                    //checking account type
-                    String accountCheck = databaseHelper.findAccount(username);
-                    if(accountCheck.equals("student")) {
-                        intent = new Intent(MainActivity.this,Student.class);
-                        startActivity(intent);
-                    }
-                    else if(accountCheck.equals("teacher")) {
-                        intent = new Intent(MainActivity.this,Teacher.class);
-                        startActivity(intent);
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(),"username and password didn't match",Toast.LENGTH_LONG).show();
-                }
-            }
-        }
-        else if (v.getId() == R.id.signUpHereButton){
-
-            intent = new Intent(MainActivity.this,SignUpActivity.class);
+            intent = new Intent(getApplicationContext(), Student.class);
             startActivity(intent);
         }
-    }
+        else if(v.getId() == R.id.teacherSchedule) {
 
-    //username error message generator
-    public void usernameErrorMessage() {
-        usernameEditText.setError("Enter user name");
-        usernameEditText.requestFocus();
-    }
-
-    //password error message generator
-    public void passwordErrorMessage() {
-        passwordEditText.setError("Enter a valid password");
-        passwordEditText.requestFocus();
+            intent = new Intent(getApplicationContext(), Teacher.class);
+            startActivity(intent);
+        }
     }
 
     @Override
