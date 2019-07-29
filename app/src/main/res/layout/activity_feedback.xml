@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     android:weightSum="4"
     tools:context=".FeedbackActivity">
 
@@ -19,11 +19,11 @@
             android:id="@+id/feedbackNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
             android:hint="Enter Your Name"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="20dp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -36,11 +36,11 @@
             android:id="@+id/feedbackMessageEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
             android:hint="Enter Your Message"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="20dp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -52,22 +52,22 @@
 
         <Button
             android:id="@+id/feedbackSendButton"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send"
             android:textSize="20sp"
-            android:textStyle="bold"
-            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/feedbackClearButton"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
             android:text="Clear"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="50dp"
-            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

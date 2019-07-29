@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:weightSum="4"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:weightSum="4">
 
         <TextView
             android:id="@+id/timeTextView"
-            android:layout_weight="1.5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:paddingLeft="5dp"
             android:text="10:00 AM"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:paddingLeft="5dp"/>
+            android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_weight="2.5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="2.5"
             android:orientation="vertical">
 
             <TextView
@@ -33,21 +33,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
                 android:text="ICT - 607"
-                android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:gravity="center_horizontal"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/courseTeacherName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
                 android:text="Sadia Sultana"
-                android:textStyle="bold"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:gravity="center_horizontal"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 

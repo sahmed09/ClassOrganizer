@@ -15,11 +15,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="Student Corner"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold"
             android:textAlignment="center"
-            android:layout_marginBottom="20dp"/>
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -54,22 +54,22 @@
 
         <Button
             android:id="@+id/showSchedule"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="View Schedule"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
         <Button
             android:id="@+id/courseDetails"
-            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="View Courses"
             android:layout_marginLeft="20dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:layout_weight="1"
+            android:text="View Courses"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
     </LinearLayout>
 

@@ -2,24 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/fullRoutineId"
-        android:title="View Full Routine"
-        app:showAsAction="never"/>
 
     <item
-        android:id="@+id/shareId"
-        android:title="Share"
+        android:id="@+id/action_settings"
+        android:title="Settings"
         app:showAsAction="never"/>
 
-    <item
-        android:id="@+id/feedbackId"
-        android:title="Report a problem"
-        app:showAsAction="never"/>
-
-    <item
-        android:id="@+id/aboutUsId"
-        android:title="About Us"
-        app:showAsAction="never"/>
 
 </menu>

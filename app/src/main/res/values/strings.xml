@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Class Organizer</string>
 
+    <string name="nav_header_title">Class Organizer</string>
+    <string name="nav_header_subtitle">Dept. of ICT,Comilla University</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="student_schedule"> Student Schedule </string>
     <string name="teacher_schedule"> Teacher Schedule </string>
 
