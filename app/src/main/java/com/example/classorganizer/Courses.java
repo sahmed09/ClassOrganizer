@@ -5,18 +5,15 @@ import android.os.Bundle;
 
 import java.util.Objects;
 
-public class AboutUsActivity extends AppCompatActivity {
+public class Courses extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
-
-        //changing title bar name
-        Objects.requireNonNull(getSupportActionBar()).setTitle("About Us");
-
+        setContentView(R.layout.activity_courses);
+        this.setTitle("Courses");
         //adding back button on Toolbar
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 }

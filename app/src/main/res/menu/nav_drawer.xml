@@ -5,11 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/fullRoutineId"
-            android:title="Full Routine" />
+            android:id="@+id/nav_full_routine"
+            android:title="Full Routine"
+            android:icon="@drawable/ic_full_routine_black_24dp"/>
 
         <item
-            android:id="@+id/aboutUsId"
+            android:id="@+id/nav_courses"
+            android:title="Courses"
+            android:icon="@drawable/ic_courses_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_about_us"
             android:title="About Us"
             android:icon="@drawable/ic_about_us_black_24dp"/>
     </group>
@@ -17,12 +23,12 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/shareId"
+                android:id="@+id/nav_share"
                 android:title="Share"
                 android:icon="@drawable/ic_share_black_24dp"/>
 
             <item
-                android:id="@+id/feedbackId"
+                android:id="@+id/nav_feedback"
                 android:title="Report a problem"
                 android:icon="@drawable/ic_report_black_24dp"/>
         </menu>

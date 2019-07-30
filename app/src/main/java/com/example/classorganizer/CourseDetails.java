@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class CourseDetails extends AppCompatActivity {
 
     TextView batchName,courseName;
@@ -22,30 +24,31 @@ public class CourseDetails extends AppCompatActivity {
 
             String value = bundle.getString("batchName");
 
-            if ("5th Batch(MSc)".equals(value)) {
-                batchName.setText(value);
-                courseName.setText(R.string.fifthBatchCourseName);
-
-            }else if ("6th Batch".equals(value)) {
-                batchName.setText(value);
-                courseName.setText(R.string.sixthBatchCourseName);
-
-            } else if ("7th Batch".equals(value)) {
-                batchName.setText(value);
-                courseName.setText(R.string.seventhBatchCourseName);
-
-            } else if ("8th Batch".equals(value)) {
-                batchName.setText(value);
-                courseName.setText(R.string.eighthBatchCourseName);
-
-            } else if ("9th Batch".equals(value)) {
-                batchName.setText(value);
-                courseName.setText(R.string.ninthBatchCourseName);
-
-            } else if ("10th Batch".equals(value)) {
-                batchName.setText(value);
-                courseName.setText(R.string.tenthBatchCourseName);
-
+            switch (Objects.requireNonNull(value)) {
+                case "5th Batch(MSc)":
+                    batchName.setText(value);
+                    courseName.setText(R.string.fifthBatchCourseName);
+                    break;
+                case "6th Batch":
+                    batchName.setText(value);
+                    courseName.setText(R.string.sixthBatchCourseName);
+                    break;
+                case "7th Batch":
+                    batchName.setText(value);
+                    courseName.setText(R.string.seventhBatchCourseName);
+                    break;
+                case "8th Batch":
+                    batchName.setText(value);
+                    courseName.setText(R.string.eighthBatchCourseName);
+                    break;
+                case "9th Batch":
+                    batchName.setText(value);
+                    courseName.setText(R.string.ninthBatchCourseName);
+                    break;
+                case "10th Batch":
+                    batchName.setText(value);
+                    courseName.setText(R.string.tenthBatchCourseName);
+                    break;
             }
         }
     }
