@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 drawerLayout.clearFocus();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;*/
+            case R.id.nav_home:
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
             case R.id.nav_full_routine :
                 intent = new Intent(getApplicationContext(), FullRoutine.class);
                 startActivity(intent);
