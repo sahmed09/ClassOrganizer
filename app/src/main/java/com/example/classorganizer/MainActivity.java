@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
+            /*case R.id.nav_home:
+                intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                drawerLayout.clearFocus();
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;*/
             case R.id.nav_full_routine :
                 intent = new Intent(getApplicationContext(), FullRoutine.class);
                 startActivity(intent);
