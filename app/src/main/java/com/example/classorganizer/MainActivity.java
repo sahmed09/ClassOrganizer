@@ -55,32 +55,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            /*case R.id.nav_home:
+            case R.id.nav_home:
                 intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                drawerLayout.clearFocus();
-                drawerLayout.closeDrawer(GravityCompat.START);
-                break;*/
-            case R.id.nav_home:
-                drawerLayout.closeDrawer(GravityCompat.START);
+                finish();
                 break;
             case R.id.nav_full_routine :
                 intent = new Intent(getApplicationContext(), FullRoutine.class);
                 startActivity(intent);
-                drawerLayout.clearFocus();
-                drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.nav_courses :
                 intent = new Intent(getApplicationContext(), Courses.class);
                 startActivity(intent);
-                drawerLayout.clearFocus();
-                drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.nav_about_us :
                 intent = new Intent(getApplicationContext(), AboutUsActivity.class);
                 startActivity(intent);
-                drawerLayout.clearFocus();
-                drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.nav_share :
                 intent = new Intent(Intent.ACTION_SEND);
@@ -93,14 +83,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Intent.EXTRA_TEXT,body);
 
                 startActivity(Intent.createChooser(intent, "Share with "));
-                drawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.nav_feedback :
                 intent = new Intent(getApplicationContext(),FeedbackActivity.class);
                 startActivity(intent);
-                drawerLayout.closeDrawer(GravityCompat.START);
                 break;
         }
+        drawerLayout.clearFocus();
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 
